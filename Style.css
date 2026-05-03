@@ -2,7 +2,255 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&display=swap');
 
 
-body{
-    background-color: grey;
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
+body { font-family: 'Barlow', sans-serif; }
+
+img { display: block; width: 100%; }
+
+/* NAV */
+header {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
 }
+
+header img { width: 160px; }
+
+nav { margin-left: auto; }
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+nav ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav ul li:last-child a {
+  background: white;
+  color: black;
+  padding: 14px 24px;
+  border-radius: 30px;
+  font-family: 'Fraunces', serif;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+/* HERO */
+#A {
+  background: #3dbeff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#A h2 {
+  color: white;
+  font-family: 'Fraunces', serif;
+  font-size: 52px;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+}
+
+#A > div:first-of-type { margin-top: 40px; }
+#A > div:first-of-type img { width: 36px; }
+
+#A > div:last-of-type {
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 100%;
+}
+
+/* FILAS DE 2 COLUMNAS */
+#B, #C, #D, #E { width: 50%; min-height: 480px; }
+
+#B {
+  float: left;
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 80px;
+}
+
+#C { float: right; overflow: hidden; }
+#C img { height: 100%; object-fit: cover; }
+
+#D { float: left; clear: both; overflow: hidden; }
+#D img { height: 100%; object-fit: cover; }
+
+#E {
+  float: right;
+  background: #fffbf8;
+  display: flex;
+  align-items: center;
+  padding: 80px;
+}
+
+#B h2, #E h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 38px;
+  color: #23303e;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+#B p, #E p { color: #808397; line-height: 1.8; }
+
+#B h4, #E h4 {
+  font-family: 'Fraunces', serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #23303e;
+  margin-top: 28px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+#B h4::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; left: -6px; right: -6px;
+  height: 8px;
+  background: rgba(250, 212, 0, 0.5);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+#E h4::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; left: -6px; right: -6px;
+  height: 8px;
+  background: rgba(254, 120, 103, 0.5);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+/* GRAPHIC DESIGN + PHOTOGRAPHY */
+#F, #G, #H, #I { width: 50%; height: 560px; float: left; }
+
+#F { clear: both; overflow: hidden; }
+#F img { height: 100%; object-fit: cover; }
+
+#G {
+  background: #90d4c5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding: 60px;
+}
+
+#H { overflow: hidden; }
+#H img { height: 100%; object-fit: cover; }
+
+#I {
+  background: #90d4c5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding: 60px;
+}
+
+#cerezas h3, #I h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 24px;
+  color: #25564b;
+  margin-bottom: 20px;
+}
+
+#cerezas p, #I p { color: #458d7e; line-height: 1.7; }
+
+/* TESTIMONIOS */
+#personas {
+  clear: both;
+  background: #fffbf8;
+  padding: 100px 60px;
+  text-align: center;
+}
+
+#cliente {
+  font-size: 14px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #a7abae;
+  margin-bottom: 80px;
+  display: block;
+}
+
+#rubia, #loco, #señora {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1.5%;
+}
+
+#rubia img, #icono02 img, #icono03 img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 40px;
+}
+
+#rubia p, #icono02 p, #icono03 p { color: #808397; line-height: 1.8; }
+
+#rubia h5, #icono02 h5, #icono03 h5 {
+  font-family: 'Fraunces', serif;
+  font-size: 16px;
+  color: #23303e;
+  margin-top: 32px;
+}
+
+/* GALERÍA */
+#lineadefotos {
+  clear: both;
+  display: flex;
+}
+
+#lineadefotos > div { width: 25%; height: 360px; overflow: hidden; }
+#lineadefotos img { height: 100%; object-fit: cover; }
+
+/* FOOTER */
+footer { background: #90d4c5; }
+
+#end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 40px;
+  gap: 32px;
+  text-align: center;
+}
+
+#icono-end img { width: 140px; }
+
+#text p {
+  display: flex;
+  gap: 40px;
+  color: #458d7e;
+}
+
+#text p br { display: none; }
+
+#iconos-redes { display: flex; gap: 20px; }
+#iconos-redes img { width: 20px; }
