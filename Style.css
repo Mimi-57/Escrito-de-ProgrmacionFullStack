@@ -8,7 +8,6 @@ body { font-family: 'Barlow', sans-serif; }
 
 img { display: block; width: 100%; }
 
-/* NAV */
 header {
   position: absolute;
   top: 0; left: 0;
@@ -46,7 +45,6 @@ nav ul li:last-child a {
   text-transform: uppercase;
 }
 
-/* HERO */
 #A {
   background: #3dbeff;
   min-height: 100vh;
@@ -75,7 +73,6 @@ nav ul li:last-child a {
   width: 100%;
 }
 
-/* FILAS DE 2 COLUMNAS */
 #B, #C, #D, #E { width: 50%; min-height: 480px; }
 
 #B {
@@ -142,7 +139,6 @@ nav ul li:last-child a {
   z-index: -1;
 }
 
-/* GRAPHIC DESIGN + PHOTOGRAPHY */
 #F, #G, #H, #I { width: 50%; height: 560px; float: left; }
 
 #F { clear: both; overflow: hidden; }
@@ -180,7 +176,6 @@ nav ul li:last-child a {
 
 #cerezas p, #I p { color: #458d7e; line-height: 1.7; }
 
-/* TESTIMONIOS */
 #personas {
   clear: both;
   background: #fffbf8;
@@ -221,7 +216,6 @@ nav ul li:last-child a {
   margin-top: 32px;
 }
 
-/* GALERÍA */
 #lineadefotos {
   clear: both;
   display: flex;
@@ -230,7 +224,6 @@ nav ul li:last-child a {
 #lineadefotos > div { width: 25%; height: 360px; overflow: hidden; }
 #lineadefotos img { height: 100%; object-fit: cover; }
 
-/* FOOTER */
 footer { background: #90d4c5; }
 
 #end {
